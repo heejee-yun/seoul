@@ -3,7 +3,7 @@
 	<head>
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Bootstrap demo</title>
+	    <title><i class="fa-solid fa-clipboard-check"></title>
 	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	</head>
 	<body> <!-- ######## 개인 프로젝트 회원관리 페이지 만드는데, 검색, 삭제 후가 가능하게 구현하기######## -->
@@ -40,38 +40,34 @@
 					</nav>
 				</div>
 		<!-- ## 검색하는 곳 크기 줄여햐함## -->
-				<div class="row g-3 border-success" style="margin: 30px">
-					<div class="col-sm-2">
-						<select class="form-select" aria-label="option">
+				<div style="margin: 30px 100px 50px 100px; border: solid 1px; padding: 50px 50px 50px 50px;">
+					<div class="row" style="margin-bottom: 50px;">
+						<select class="col form-select" style="margin-right: 10px;">
 							<option selected>선택</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
-						</select>
-					</div>
-					<div class="col-sm-2">
-						<select class="form-select" aria-label="option">
+						</select>	
+						<select class="col form-select">
 							<option selected>선택</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
-						</select>
-					</div>
-					<div class="col-sm-2">
-						<input type="text" class="form-control" placeholder="시작일" aria-label="Zip">
+						</select>	
+					<div class="col">
+						<input type="text" class="form-control" placeholder="시작일">
 					</div>   
-					<div class="col-sm-2">
-						<input type="text" class="form-control" placeholder="종료일" aria-label="Zip">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="종료일">
 					</div>
-					<div class="row g-3">
-						<div class="col-2">
-							<select class="form-select" aria-label="option">
-								<option selected>선택</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-							</select>
-						</div>
+					</div>
+					<div class="row">
+						<select class="col form-select" aria-label="option">
+							<option selected>선택</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>	
 						<div class="col-3" >
 							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="float: left;">
 						</div>
