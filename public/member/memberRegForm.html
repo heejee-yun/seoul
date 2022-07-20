@@ -7,13 +7,19 @@
     	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     	<link rel="shortcut icon" href="D:\factory\ws_sts_4151\seoul\image\logo2\logo_16px.png">
   		<!-- 위에 <link 부분 없으면  Bootstrap  부분 적용 불가함. Favicon 적용 방법 다시 찾기  -->
+	<style type="text/css">
+/*  		div {
+			border: solid 1px;
+			border-collapse: collapse;
+		}  */
+	</style>
 	</head>
-	<body> <!-- ######## 개인 프로젝트 회원관리 페이지 만드는데, 검색, 삭제 후가 가능하게 구현하기######## -->
+	<body> 
 		<form>
-			<div class="wrap">
-				<div class="Navbar">
-					<nav class="navbar navbar-expand-lg bg-light">
-						<div class="container-fluid">
+			<div class="container"> <!-- 관행 -->
+				<div class="container-fluid"> <!-- 관리자 페이지는 대부분 쓰는 코드  -->
+					<div class="Navbar">
+						<nav class="navbar navbar-expand-lg bg-light">
 							<a class="navbar-brand" href="" style="margin-left: 150px"><img src="D:\factory\ws_sts_4151\seoul\image\logo2\logo_nobg.png" width="200px"></a>
 							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
@@ -38,14 +44,12 @@
 								</ul>
 							</div>
 							<button type="button" class="btn btn-outline-warning" style="align-content: flex-end; margin-right: 150px;">로그인</button>
-						</div>
-					</nav>
-				</div>
+						</nav>
+					</div>
 				<!-- ## Tap이 있는 부분 ## -->
-				<div class="tap">
 					<ul class="nav nav-tabs">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">코드그룹관리</a>
+							<a class="nav-link active" aria-current="page" href="#">코드관리</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">코드그룹관리</a>
@@ -61,38 +65,71 @@
 							<a class="nav-link" href="#">회원관리</a>
 						</li>
 					</ul>
-				</div>
-				<hr>
-				<!-- ## 등록폼 있는 부분 ## -->
-				<div class="regform" style="margin: 10px 60px 10px 60px" align="center">
-					<div class="row"><!--  TR 같은 부분  -->
-						<div class="col-1">아이디</div>  
-						<div class="col-3">
-							<input type="text" class="form-control" placeholder="아이디">
-						</div>   
-						<div class="col-1">이름</div>
-						<div class="col-3">
-							<input type="text" class="form-control" placeholder="이름">
-						</div>
-						<div class="col-1">연락처</div>
-						<div class="col-3">
-							<input type="text" class="form-control" placeholder="연락처">
-						</div>
-					</div>
+					<hr>
+					<!-- 테이블 목록이 시작되는 부분  -->
+					<!-- ## 등록폼 있는 부분 ## -->
+					<br>
 					<div class="row">
-						<div class="col-1">이메일</div>
-						<div class="col-3">
-							<input type="text" class="form-control" placeholder="이메일">
+						<div class="col-2"> 
+						사진 넣는 부분<br>
+						<input type="file" name="file" id="imageFileOpenInput" accept="image/*">
 						</div>
-						<div class="col-1">생년월일</div>
-						<div class="col-3">
-							<input type="text" class="form-control" placeholder="생년월일">
-						</div>
-						<div class="col-1">성별</div>
-						<div class="col-3">
-							<input type="text" class="form-control" placeholder="성별">
+						<div class="col" style="border: solid;">
+							<div class="row">
+								<div class="col-1">성명</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-1">한문</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-1">영문</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">생년월일</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-1">전화번호</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-1">비상연락망</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">이메일</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-1">나이</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-1">가입일</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">주소</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-1">취미생활</div>
+								<div class="col gx-0">
+									<input type="text" class="form-control">
+								</div>
+							</div>
 						</div>
 					</div>
+					<br>
 					<h3>학력사항</h3>
 					<div class="row">
 						<div class="col">기간</div>
@@ -119,6 +156,7 @@
 							<input type="text" class="form-control">
 						</div>
 					</div>
+					<br>
 					<h3>교육연수</h3>
 					<div class="row">
 						<div class="col">연수기간</div>
@@ -137,6 +175,7 @@
 							<input type="text" class="form-control">
 						</div>
 					</div>
+					<br>
 					<h3>자격사항</h3>
 					<div class="row">
 						<div class="col">취득일</div>
@@ -159,6 +198,7 @@
 							<input type="text" class="form-control">
 						</div>
 					</div>
+					<br>
 					<h3>경력사항</h3>
 					<div class="row">
 						<div class="col">활동기간</div>
@@ -181,13 +221,14 @@
 							<input type="text" class="form-control">
 						</div>
 					</div>
-				</div>
 				<!-- 아래 버튼 -->
-				<div class="bottombutton" align="center" style="margin-top: 20px;">
-					<button class="btn btn-primary" type="button"><i class="fa-solid fa-circle-plus"></i>가입하기</button>
-					<button class="btn btn-danger" type="button"><i class="fa-solid fa-rotate-left"></i>취소</button>
+					<br>
+					<div class="bottombutton" align="center" style="margin-top: 20px;">
+						<button class="btn btn-danger" type="button" style="float: left;"><i class="fa-solid fa-rotate-left"></i>취소</button>
+						<button class="btn btn-primary" type="button" style="float: right;"><i class="fa-solid fa-circle-plus"></i>가입하기</button>
+					</div>
 				</div>
-			</div>	
+			</div>
 		</form>
     	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     	<script src="https://kit.fontawesome.com/e29f2fca9d.js" crossorigin="anonymous"></script>
