@@ -8,12 +8,162 @@
     	<link rel="shortcut icon" href="D:\factory\ws_sts_4151\seoul\image\logo2\logo_16px.png">
   		<!-- 위에 <link 부분 없으면  Bootstrap  부분 적용 불가함. Favicon 적용 방법 다시 찾기  -->
 	</head>
-	<body> <!-- ######## 개인 프로젝트 회원관리 페이지 만드는데, 검색, 삭제 후가 가능하게 구현하기######## -->
+	<body> <!-- ######## 개인 프로젝트 회원관리 페이지 만드는데, 검색, 삭제 후가 가능하게 구현하기 / 모달 넣기 ######## -->
 		<form>
+		<div class="container-fluid">
+			<div class="Navbar">
+				<nav class="navbar navbar-expand-lg bg-light">
+					<a class="navbar-brand" href="" style="margin-left: 150px"><img src="D:\factory\ws_sts_4151\seoul\image\logo2\logo_nobg.png" width="200px"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 50px">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">홈</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">To do list</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">성취</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">응원댓글</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">마이페이지</a>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="btn btn-outline-warning" style="align-content: flex-end; margin-right: 150px;">로그인</button>
+				</nav>
+			</div>
+				<!--## Tap이 있는 부분 ## -->
+				<div class="tap">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">코드관리</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">코드그룹관리</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">1(추후 추가 예정)</a></li>
+								<li><a class="dropdown-item" href="#">2(추후 추가 예정)</a></li>
+								<li><a class="dropdown-item" href="#">3(추후 추가 )</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Separated link</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">회원관리</a>
+						</li>
+					</ul>
+				</div>
+				<!-- ## 검색 블록 ## -->
+			<div style="margin: 30px 100px 50px 100px; border: solid 1px; padding: 20px 20px 20px 20px;">
+				<div class="row" style="margin-bottom: 20px;">
+					<select class="col form-select" style="margin-right: 10px;">
+						<option selected>선택</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>	
+					<select class="col form-select">
+						<option selected>선택</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>	
+					<div class="col">
+						<input type="text" class="form-control" placeholder="시작일">
+					</div>   
+					<div class="col">
+						<input type="text" class="form-control" placeholder="종료일">
+					</div>
+				</div>
+				<div class="row">
+					<select class="col form-select" aria-label="option">
+						<option selected>선택</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>	
+					<div class="col-3" >
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="float: left;">
+					</div>
+					<div class="col-3">
+						<button class="btn btn-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+						<button class="btn btn-danger" type="button"><i class="fa-solid fa-rotate-left"></i></button>  				
+					</div>
+				</div>
+			</div>
+				<!-- ## 테이블 코드 ##  -->
+	    	<table class="table">
+			  <thead>
+			    <tr>
+			      <th scope="col">선택</th>
+			      <th scope="col">No</th>
+			      <th scope="col">아이디</th>
+			      <th scope="col">이름</th>
+			      <th scope="col">연락처</th>
+			      <th scope="col">이메일</th>
+			      <th scope="col">생년월일</th>
+			      <th scope="col">성별</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>
+			      	<div>
+  					<input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+				</div>
+			      </td>
+			      <td>1</td>
+			      <td>leejh90</td>
+			      <td>이준호</td>
+			      <td>010-8888-2222</td>
+			      <td>leejh90@dulpm.com</td>
+			      <td>1990.06.23</td>
+			      <td>남</td>
+			    </tr>
+			  </tbody>
+			</table>
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination justify-content-center">
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li class="page-item"><a class="page-link" href="#">1</a></li>
+			    <li class="page-item"><a class="page-link" href="#">2</a></li>
+			    <li class="page-item"><a class="page-link" href="#">3</a></li>
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+			<div style="float: left;">
+				<button class="btn btn-danger" type="button"><i class="fa-solid fa-rotate-left">취소아이콘</i></button>
+				<button class="btn btn-danger" type="button"><i class="fa-solid fa-trash-can">쓰레기통 아이콘</i></button>
+			</div>
+			<div style="float: right;">
+				<button class="btn btn-success me-md-2" type="button"><i class="fa-solid fa-clipboard-list">리스트아이콘</i></button>
+				<button class="btn btn-primary" type="button" href="/memberRegForm.html"><i class="fa-solid fa-circle-plus" href="memberRegForm.html">추가 아이콘</i></button>
+			</div>
+		</div>
+		
+
+
+		
+<!-- 		
 			<div class="wrap" style="margin: 30px">
+			<div class="container-fluid">
 				<div class="Navbar">
 					<nav class="navbar navbar-expand-lg bg-light">
-						<div class="container-fluid">
 							<a class="navbar-brand" href="" style="margin-left: 150px"><img src="D:\factory\ws_sts_4151\seoul\image\logo2\logo_nobg.png" width="200px"></a>
 							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
@@ -38,10 +188,10 @@
 								</ul>
 							</div>
 							<button type="button" class="btn btn-outline-warning" style="align-content: flex-end; margin-right: 150px;">로그인</button>
-						</div>
 					</nav>
 				</div>
-			<!-- ## Tap이 있는 부분 ## -->
+			</div>
+			## Tap이 있는 부분 ##
 				<div class="tap">
 					<ul class="nav nav-tabs">
 						<li class="nav-item">
@@ -62,7 +212,7 @@
 						</li>
 					</ul>
 				</div>
-				<!-- ## 검색 블록 ## -->
+				## 검색 블록 ##
 				<div style="margin: 30px 100px 50px 100px; border: solid 1px; padding: 50px 50px 50px 50px;">
 					<div class="row" style="margin-bottom: 20px;">
 						<select class="col form-select" style="margin-right: 10px;">
@@ -100,8 +250,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			    <!-- 테이블 코드  -->
+			    ## 테이블 코드 ## 
 		    	<table class="table" style="margin: 30px">
 				  <thead>
 				    <tr>
@@ -149,15 +298,16 @@
 				    </li>
 				  </ul>
 				</nav>
-				<div class style="float: left;">
-					<button class="btn btn-danger" type="button"><i class="fa-solid fa-rotate-left"><!-- 취소아이콘 --></i></button>
-					<button class="btn btn-danger" type="button"><i class="fa-solid fa-trash-can"><!-- 쓰레기통 아이콘 --></i></button>
+				<div style="float: left;">
+					<button class="btn btn-danger" type="button"><i class="fa-solid fa-rotate-left">취소아이콘</i></button>
+					<button class="btn btn-danger" type="button"><i class="fa-solid fa-trash-can">쓰레기통 아이콘</i></button>
 				</div>
-				<div class style="float: right;">
-					<button class="btn btn-success me-md-2" type="button"><i class="fa-solid fa-clipboard-list"><!-- 리스트아이콘 --></i></button>
-					<button class="btn btn-primary" type="button"><i class="fa-solid fa-circle-plus"><!-- 추가 아이콘 --></i></button>
+				<div style="float: right;">
+					<button class="btn btn-success me-md-2" type="button"><i class="fa-solid fa-clipboard-list">리스트아이콘</i></button>
+					<button class="btn btn-primary" type="button" href="memberRegForm.html"><i class="fa-solid fa-circle-plus">추가 아이콘</i></button>
 				</div>
 			</div>	
+ -->			
 		</form>
     	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     	<script src="https://kit.fontawesome.com/e29f2fca9d.js" crossorigin="anonymous"></script>
