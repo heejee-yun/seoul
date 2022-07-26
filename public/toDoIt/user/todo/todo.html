@@ -7,23 +7,20 @@
     	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     	<link rel="shortcut icon" href="D:\factory\ws_sts_4151\seoul\image\logo2\logo_16px.png">
 	</head>
-	<body> <!-- ######## 개인 프로젝트 회원관리 페이지 만드는데, 검색, 삭제 후가 가능하게 구현하기 / 모달 넣기 ######## -->
-		<div class="container"> 
-			<div class="container-fluid d-grid col-5 mx-auto">
-		<center><h2>회원가입</h2></center>
-		<hr>
-		<table>
-			<tr>
-				<th>아이디</th>
-				<td>
-					<input type="text" class="form-control" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합 권장">
-					<button class="btn btn-success">중복확인</button>
-				</td>
-			</tr>
-		</table>
-
-
+	<body> 
+		<button class="btn btn-primary" type="button"><i class="fa-solid fa-circle-plus">추가하기</i></button>
+		<ol id="list">
+			<li>Git 잔디 심기</li>
+			<li>10분 명상</li>
+		</ol>	
+			
     	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     	<script src="https://kit.fontawesome.com/e29f2fca9d.js" crossorigin="anonymous"></script>
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+    		function addlast() {
+    			$('#list').append('<li>새로 추가된 아이템</li>');
+    		}
+    	</script>
+    	
 	</body>
 </html>
