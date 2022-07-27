@@ -235,6 +235,12 @@
 					<br>
 					<h3>경력사항</h3>
 					<hr>
+					<button class="btn btn-primary" type="button" onclick="addSchool()">
+						<i class="fa-solid fa-circle-plus"></i>추가
+					</button>
+					<button class="btn btn-danger" type="button">
+						<i class="fa-solid fa-trash-can"></i>삭제
+					</button>
 					<div class="row">
 						<div class="col">활동기간</div>
 						<div class="col">기관</div>
@@ -246,9 +252,7 @@
 							<input type="date" name="startDate" id="startDate">
 							<input type="date" name="endDate" id="endDate">
 						</div>
-						<div class="col">
-						
-						
+						<div class="col">	
 							<input type="text" class="form-control">
 						</div>
 						<div class="col">
@@ -310,8 +314,7 @@
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     	<script type="text/javascript">
     		function addSchool(){
-    			$("#schoolPoint").append('<div class="row"><div class="col-1">낙타</div></div>ㅍ');	
-    			
+    								
     		} 
     	</script>
 	</body>
