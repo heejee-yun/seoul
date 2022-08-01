@@ -15,13 +15,41 @@
 	<body> <!-- ######## 개인 프로젝트 회원관리 페이지 만드는데, 검색, 삭제 후가 가능하게 구현하기 / 모달 넣기 ######## -->
 		<div class="container"> 
 			<div class="container-fluid d-grid col-6 mx-auto">
+				<div class="Navbar">
+					<nav class="navbar navbar-expand-lg bg-light">
+						<a class="navbar-brand" href="" style="margin-left: 150px"><img src="D:\factory\ws_sts_4151\seoul\image\logo2\logo_nobg.png" width="200px"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 50px">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#">홈</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">To do list</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">성취</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">응원댓글</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">마이페이지</a>
+								</li>
+							</ul>
+						</div>
+						<button type="button" class="btn btn-outline-warning" style="align-content: flex-end; margin-right: 150px;">로그인</button>
+					</nav>
+				</div>
 				<center><h2>회원가입</h2></center>
 				<hr>
 				<table>
 					<tr>
 						<th>아이디</th>
-						<td><input type="text" class="form-control" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합 권장"></td>
-						<td><button class="btn btn-success">중복확인</button></td>
+						<td><input type="text" class="form-control" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합"></td>
+						<td><button class="btn btn-success btn-sm">중복확인</button></td>
 					</tr>
 					<tr>
 						<th>비밀번호</th>
@@ -54,7 +82,7 @@
 					<tr>
 						<th>이메일</th>
 						<td><input type="text" class="form-control" placeholder="이메일을 입력해주세요"></td>
-						<td><button class="btn btn-success">중복확인</button></td>
+						<td><button class="btn btn-success btn-sm">중복확인</button></td>
 					</tr>
 					<tr>
 						<th>성별</th>
@@ -89,11 +117,6 @@
 							</p>
 						</td>
 					</tr>
-
-							<input type="text" class="form-control" placeholder="비밀번호를 입력해주세요">
-						</td>
-						<td></td>
-					</tr>
 					<tr>
 						<th>가입경로</th>
 						<td>
@@ -116,7 +139,11 @@
 							<input type="text" class="form-control" placeholder="다짐을 입력해주세요"><hr>
 						</td>
 					</tr>
-					
+					<tr center>
+						<td colspan="2">
+							<center><button class="btn btn-success">가입하기</button><button class="btn btn-dark">뒤로가기</button></center>
+						</td>
+					</tr>
 				</table>
 			</div>
 		</div>
@@ -130,9 +157,6 @@
     		    var number = $(this).val().replace(/[^0-9]/g,'');
     		    $(this).val(number);
     		  }).blur(function(){
-    		    $(this).parent().removeClass('on');
-    		    // KM-1261 회원가입 14세 인증
-    		    birthCheckAction.validatorText();
     		  });
     	  </script>
     	
