@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MyPage</title>
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    	<link rel="shortcut icon" href="D:\factory\ws_sts_4151\seoul\image\logo2\logo_16px.png">
+    	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
+
+    		.navbar, footer{
+  				box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  				font-weight: bold;
+  				font-size: 2.2ex;
+  				font-family: 'Gowun Batang', serif;
+  				color: white;
+			}
+			i {
+    			font-size: 2rem;
+    			color: black;
+    			margin-right: 15px;
+			}
+			th{
+				background-color: #EAEAEA;
+			}
+			table{
+				text-align: center;
+			}	
+    	</style>
+	</head>
+	<body> 
+		<div class="Navbar" id = "navbar">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand" href="#" style="margin: 20px 300px 20px 300px;"><img src="D:\factory\ws_sts_4151\seoul\image\logo2\logo_nobg.png" width="200px"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 150px;">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Myself
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">TodoList</a></li>
+								<li><a class="dropdown-item" href="#">Milestones</a></li>
+								<li><a class="dropdown-item" href="#">MyPage</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Team
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">List</a></li>
+								<li><a class="dropdown-item" href="#">TeamComments</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Comments</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">JOIN</a>
+						</li>
+						<li>
+						<button type="button" class="btn btn-outline-dark btn-sm" style="align-content: flex-end; margin-left: 100px;">LOGIN</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- Main -->
+		<div class="container" style="text-align: center;">
+			<img src="D:\factory\ws_sts_4151\seoul\image\example1.png" width="200px">
+			<table class="table table-striped-columns" style="width: 500px; text-align:center;">
+				<tr>
+					<th scope = "col">아이디</th>
+					<td>junhoe90</td>
+				</tr>
+				<tr>
+					<th scope = "col">비밀번호</th>
+					<td>*****</td>
+				</tr>
+				<tr>
+					<th scope = "col">비밀번호확인</th>
+					<td>****</td>
+				</tr>
+				<tr>
+					<th scope = "col">이름</th>
+					<td>이준호</td>
+				</tr>
+				<tr>
+					<th scope = "col">연락처</th>
+					<td>010-2233-4455</td>
+				</tr>
+				<tr>
+					<th scope = "col">이메일</th>
+					<td>junheo@asd.com</td>
+				</tr>
+				<tr>
+					<th scope = "col">생일</th>
+					<td>1990.08.22</td>
+				</tr>
+				<tr>
+					<th scope = "col">성별 </th>
+					<td>남</td>
+				</tr>
+				<tr>
+					<th scope = "col">가입경로</th>
+					<td>인스타광고</td>
+				</tr>
+				<tr>
+					<th scope = "col">다짐 </th>
+					<td>잔디심자</td>
+				</tr>	
+			</table>
+			<center>
+				<button type="button" class="btn btn-primary">수정하기</button> 
+				<button type="button" class="btn btn-secondary">돌아가기</button>
+			</center>
+		</div>
+		
+		<!-- Footer 넣을 자리 / 넣을 때 컨테이너에 넣지 말기 네브바랑 푸터는 양 끝까지 꽉 차고 제대로된 바디 내용은 컨테이너로 안에 넣을 예정 -->
+		<footer class="bd-footer py-4 py-md-5 mt-5 bg-light">
+			<div class="container py-4 py-md-5 px-4 px-md-6">
+				<div class="row">
+					<div class="col-lg-6 mb-6">
+						<a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none">
+							<img src="D:\factory\ws_sts_4151\seoul\image\logo2\logo_nobg.png" width="100px" style="margin: 0px 30px 0px 50px">
+							Copyright © 2022. All right reserved  
+						</a>
+					</div>
+					<div class="col-lg-6 mb-6" align="center">
+						<span>
+							<i class="fa-solid fa-envelope"></i><a href="mailto:heejee.yun@gmail.com"></a>
+							<i class="fa-brands fa-linkedin"></i><a href="#"></a>
+							<i class="fa-brands fa-github"></i><a href="#"></a>
+							<a href="#">heejee.yun@gmail.com</a>
+							<a href="#">Privacy Policy</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    	<script src="https://kit.fontawesome.com/e29f2fca9d.js" crossorigin="anonymous"></script>
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    	
+    	<!-- 스크롤 펑션 찾아보는 중 -->
+    	<script>
+    	const navbar = document.querySelector("#navbar");
+
+    	function handleNavbar() {
+    	    if (window.scrollY > navbarHeight) navbar.style.backgroundColor = "white	";
+    	    else navbar.style.removeProperty('background-color');
+    	}
+    	window.addEventListener("scroll", handleNavbar);
+    	</script>
+
+	</body>
+</html>
